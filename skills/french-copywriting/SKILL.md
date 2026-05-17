@@ -70,7 +70,7 @@ If no, proceed with available context.
 - Non-breaking space before: ` !`, ` ?`, ` :`, ` ;`, ` »`
 - Non-breaking space after: `« `
 - Use `«  »` guillemets for quotations — not `" "`
-- En dash `–` for interruptions and ranges; em dash `—` used rarely
+- **Em dash `—`, en dash `–`, box-drawing dashes `─` `━`: ZERO in brand-strict French content.** Many French brands (especially Gen-Z / student / informal) ban them outright as AI tells — replace with `:` `,` `.` or `()`. Google Docs and macOS auto-replace insert them silently, so run a strip pass at the end. Plain hyphen `-` for compounds (Snell-Descartes, week-end) is always fine. Default to zero unless the brand spec explicitly allows them.
 - Ellipsis: `…` (single character, not three dots)
 
 ### Capitalization
@@ -95,6 +95,17 @@ If no, proceed with available context.
 | Missing accents | Looks careless | Always use: é, è, ê, à, ç, ù, î, etc. |
 
 For full rules, extended examples, and regional variation guidance: see `references/french-frameworks.md`
+
+---
+
+## French SEO Title & Slug Patterns
+
+These are FR-specific patterns validated against live GSC data (French education vertical) — they generalize to most French SEO contexts.
+
+- **Drop filler `de` between subject + qualifier.** `bac maths 1ere` outperforms `bac de maths 1ere` by ~6x on impressions. Same pattern for `brevet maths` vs `brevet de maths`. French searchers strip prepositions in queries.
+- **Plural over singular for school subjects.** `maths 1ere` outperforms `math 1ere` by ~4x. Plural form is the FR convention + matches search behavior.
+- **Slug type-prefix words are not SEO assets.** Organizational words like `cahier`, `revision`, `fiche` carry near-zero search weight on their own. Don't agonize over singular/plural for them, and don't migrate existing slugs (`revision-`, `fiches-`) for SEO reasons — title + H1 + body content dominate keyword weight.
+- **Register split:** blog body = tutoiement (`tu/ton/tes`); transactional pages (merci/newsletter confirmation/order receipts/account email) = vouvoiement (`vous/votre`). Never mix within a single page. When in doubt about the audience reading the page (e.g., a parent visiting a thank-you page after their kid's purchase), default to vouvoiement.
 
 ---
 

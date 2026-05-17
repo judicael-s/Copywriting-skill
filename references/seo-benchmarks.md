@@ -33,6 +33,16 @@ Loaded by the seo-copywriting skill. Contains all thresholds, specs, and page-ty
 | Year marker | Include current year for dated queries (+20-30% CTR) |
 | Google rewrite rate | ~76% of titles get rewritten; at 51-60 chars only 39-42% |
 | Uniqueness | Every page must have a unique title |
+| Brand suffix | Strip `| Brand` style suffixes from title tag. Wastes 12-15c of SERP-visible width on a signal users already get from the favicon and domain row. |
+
+## H1 Specs
+
+| Parameter | Value |
+|---|---|
+| Optimal length | ≤70 characters |
+| Why distinct from title tag | H1 displays in browser tabs, CMS admin lists, social cards, breadcrumbs — anywhere over 70c truncates. Title tag has its own SERP-pixel cap (51-60c). |
+| Uniqueness | One H1 per page; never duplicated across pages |
+| Keyword placement | Primary keyword required (matches title tag) |
 
 **Power words that lift CTR 20-30%:**
 - Exclusivity: Proven, Ultimate, Definitive, Battle-Tested
@@ -216,6 +226,22 @@ Use JSON-LD format (Google's recommended). Keep markup separate from HTML conten
 | Statistics/data posts | 12 months | Annually with new data |
 
 Changing only the publication date produces no freshness benefit and can harm trust. Google evaluates actual content changes.
+
+---
+
+## Drop / Sunset Thresholds
+
+Use these signals to decide when to deprecate or stop investing in a cluster/page:
+
+| Signal | Threshold | Action |
+|---|---|---|
+| CTR floor (cluster) | <2% on >500 impressions per 180d | Drop candidate — keyword family isn't earning clicks even when shown |
+| Impression floor (cluster) | 0 impressions per 180d | Drop candidate — no surfaceable demand at current ranking |
+| Demographic targeting floor | <1000 sessions per 28d in GA4 | Don't pursue parent/age/gender segmentation — k-anonymity blocks reliable signal |
+| Parent-intent caveat (GSC) | "Parent" / age-cohort regex queries returning 1 row per 180d | k-anonymity floor hides traffic; don't size a content investment off this signal alone |
+| Conversion crater | ≥80 sessions per 28d / 0 purchases | Audit CTAs FIRST (not content) — usually a styling/placement/targeting bug |
+
+These complement the **Tier-A / Tier-B / DROP** framework in the `seo-copywriting` skill's Post-Publish Audit Loop.
 
 ---
 

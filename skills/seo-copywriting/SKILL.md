@@ -29,7 +29,8 @@ Before writing, load context in this order:
 2. **Load `references/human-voice-rules.md`** — anti-AI detection rules. Apply to all output. Human-sounding copy is an E-E-A-T signal. If unavailable, prioritize natural language and avoid AI-sounding vocabulary (no 'leverage', 'utilize', 'streamline', 'comprehensive').
 3. **Check `.agents/product-marketing-context.md`** — if it exists, use as the primary source for product, audience, and positioning. If it does not exist, gather product and audience info from the user.
 4. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to all output. If it does not exist, ask for 2-3 adjectives describing the brand voice before writing.
-5. **Gather missing context** — only ask what the above files don't cover:
+5. **Check `.claude/skills/<brand>-brand/SKILL.md`** — if a project brand skill exists (e.g., `inesmaths-brand`), load it AND any sibling references it points to (e.g., `seo-process-additions.md`, `shopify-publish-rules.md`). These layer project-specific rules (product-CTA mapping, post-publish loop, anti-AI image rules, Shopify push mechanics) on top of universal SEO rules. Apply both.
+6. **Gather missing context** — only ask what the above files don't cover:
    - **Target keyword(s):** Primary keyword and any secondary terms?
    - **Page type:** Blog post, product page, landing page, pillar page, FAQ, local page?
    - **Search intent:** Informational, commercial, transactional, or navigational?
@@ -93,6 +94,8 @@ Map the heading hierarchy:
 - **H3s:** Subsections under H2s. Long-tail variations. Never skip levels (no H1 → H3).
 - **Place primary keyword** in: H1, first H2, and at least one additional H2.
 - **First section:** Include a direct answer block (40-60 words) for featured snippet targeting.
+- **CTA budget:** maximum 2 inline product CTAs per article (early position 20-30% post-H1, closer 90-95%). Sites with cart-page upsell widgets or related-products blocks already pressure conversion — more inline CTAs cannibalize each other. Pillar/listicle exceptions only if explicitly justified.
+- **H1 length cap:** ≤70 characters. H1 displays in browser tabs, CMS admin lists, social cards, breadcrumbs — longer H1s truncate everywhere. Distinct from title tag (51-60c SERP cap).
 
 ### Step 5: Draft Writing
 
@@ -248,6 +251,23 @@ Google can rank individual passages, not just whole pages:
 - Update the publish date only when making **substantial** content changes — fake freshness backfires
 - ~50% of Perplexity citations come from content updated in the current year
 - Include "Last updated: [date]" on every page
+
+---
+
+## Post-Publish Audit Loop
+
+After publishing, run an audit every 28 days (matches the GSC baseline window so signal compounds across cycles):
+
+- **Conversion craters** — pages with ≥80 sessions / 0 conversions per 28d signal CTA placement/visibility issues, NOT content quality. Audit CTAs first (check the class is the styled variant, not a legacy class with no CSS — invisible buttons are a top cause). Verify the CTA destination matches the article's audience intent. Fix the CTA before rewriting the body.
+- **CTR fixes** — queries with ≥2000 impressions and <5% CTR per 180d are the highest-ROI title/meta rewrite candidates. Small CTR uplift on high-impression queries (e.g., 5% → 7% = +40% relative click gain) outperforms most other content work.
+- **Tier-A / Tier-B / DROP framework:**
+  - **Tier-A** = ship within 5 days. Seasonal urgency, high-intent keywords, no entrenched incumbent on SERP, product-fit confirmed.
+  - **Tier-B** = validate keyword families with fresh Trends before committing. Lower urgency, longer SERP build-up.
+  - **DROP** = cluster with 0 impressions / 180d OR high-volume low-CTR page already ranking (sunk cost — move on).
+- **Product-to-article linkage** — verify every pillar links to its canonical product (and reverse via category pages / internal links from related spokes). Run the `link_cluster_validator.py` script (project-local) where available.
+- **Seasonal content freeze** — for exam-anchored / event-anchored sites, lock content freeze ~30 days pre-event (indexation latency). No new articles past that date for the current cycle.
+
+Cross-reference with the `google-search-console` skill Workflow 7 (28-Day Audit Loop) for the data-pull side of this loop.
 
 ---
 
