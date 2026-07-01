@@ -16,6 +16,17 @@ Part of the [Marketing Intelligence Suite](https://github.com/judicael-s) alongs
 | **social-copywriting** | Write platform-native posts for LinkedIn and X/Twitter | "LinkedIn post", "tweet", "thread", "write a post for" |
 | **tone-of-voice** | Generate a reusable brand voice guide through interactive questionnaire | "tone of voice", "brand voice", "how should we sound" |
 
+### Optional Hermes Tweet Context
+
+For Hermes Agent users, [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet)
+can supply read-only public X/Twitter context before `social-copywriting` drafts
+posts or threads. Use it for public tweet reads, replies, user lookup, trends,
+and keyword monitoring. Keep writing inside this copywriting skill.
+
+Hermes Tweet read tools use `XQUIK_API_KEY`. Leave
+`HERMES_TWEET_ENABLE_ACTIONS` unset unless a separate Hermes workflow explicitly
+approves write actions.
+
 ## What Makes This Different
 
 **Principles-based, not template-based.** Core skill is built on persuasion frameworks distilled from 250 newsletter emails by Eddie Shleyner (VeryGoodCopy) and Drayton Bird (64 years of direct-response). Includes Bird's targeting hierarchy, Hopkins' preemptive claims, Collier's emotional levers, and a 10-point copy review checklist. Not just fill-in-the-blank templates.
