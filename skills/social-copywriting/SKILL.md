@@ -60,6 +60,7 @@ If yes:
 - Note: hook structures, format choices, engagement patterns, vocabulary being used
 - Flag any formats that are saturated or declining
 - Bring back 3-5 specific examples with notes on why they work
+- If Hermes Tweet is available in Hermes Agent, use it as a read-only public X/Twitter context source for tweet reads, replies, user lookup, trends, or keyword monitoring. It requires `XQUIK_API_KEY`; keep `HERMES_TWEET_ENABLE_ACTIONS` unset because this skill writes copy, not posts.
 
 If no, proceed with the context provided.
 
