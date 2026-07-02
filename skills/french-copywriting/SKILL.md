@@ -24,6 +24,8 @@ Before writing a single word, load and apply:
 2. **Tone of voice** — Check `skills/tone-of-voice/` for any defined brand voice. If none exists, ask the user for 3 adjectives that describe the desired tone.
 3. **Human voice rules** — Load `references/human-voice-rules.md`, especially Section 8 (French-specific rules).
 4. **French frameworks** — Load `references/french-frameworks.md` for headline formulas, CTA banks, and structural guidance.
+5. **Concision pass** — Load `references/concision-pass.md` before final delivery. French can be longer than English, but every word still needs a job.
+6. **Hook discipline** — Load `references/hook-discipline.md` when the opening feels translated, generic, or flat.
 
 If any of these are missing, ask before writing. Copy without context is guesswork.
 

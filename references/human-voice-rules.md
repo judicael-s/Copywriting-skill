@@ -79,7 +79,9 @@ These are softer signals, but they accumulate. Avoid them in the same piece.
 
 ### Em Dashes (—)
 
-AI text uses em dashes at 4.7x the rate of human writers. One or two per 500 words is the ceiling.
+AI text uses em dashes at 4.7x the rate of human writers. One or two per 500 words is the general ceiling.
+
+**User or brand override wins.** If a user, brand, or project says dashes feel AI-coded, use zero em dashes and zero en dashes in user-facing copy. Prefer commas, colons, semicolons, parentheses, line breaks, or short sentences.
 
 | AI Pattern | Human Alternative |
 |---|---|

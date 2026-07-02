@@ -31,6 +31,9 @@ Before writing, load and apply:
 1. **Product-marketing context** — What is the post about? What action should it drive? Who is the audience?
 2. **Tone of voice** — Check `.agents/tone-of-voice.md` for any defined brand voice. If it does not exist, ask the user for 2-3 adjectives describing their brand voice.
 3. **Human voice rules** — Load `references/human-voice-rules.md` before writing and run copy against it before delivering. If unavailable, avoid AI vocabulary (no 'leverage', 'utilize', 'delve', 'comprehensive') and vary sentence length.
+4. **Micro-lesson workflow** — Load `references/micro-lesson-workflow.md` for educational LinkedIn/newsletter-style posts.
+5. **Hook discipline** — Load `references/hook-discipline.md` when the opening needs to stop the scroll.
+6. **Close the loop** — Load `references/close-the-loop-endings.md` before finalizing posts with a story or image-based hook.
 
 If tone-of-voice hasn't been defined and the post is audience-facing, flag it: "Note: no brand voice is defined yet. The copy will default to direct + professional. If you want a specific voice, see the tone-of-voice skill first."
 

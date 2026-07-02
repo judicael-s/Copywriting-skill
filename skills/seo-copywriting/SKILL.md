@@ -26,11 +26,14 @@ For full content creation (blog posts, pillar pages, product pages), follow the 
 Before writing, load context in this order:
 
 1. **Load `references/seo-benchmarks.md`** — all thresholds, specs, and page-type rules. This is your data reference for the entire workflow. If unavailable, use the content length and keyword placement rules in this skill as baseline.
-2. **Load `references/human-voice-rules.md`** — anti-AI detection rules. Apply to all output. Human-sounding copy is an E-E-A-T signal. If unavailable, prioritize natural language and avoid AI-sounding vocabulary (no 'leverage', 'utilize', 'streamline', 'comprehensive').
-3. **Check `.agents/product-marketing-context.md`** — if it exists, use as the primary source for product, audience, and positioning. If it does not exist, gather product and audience info from the user.
-4. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to all output. If it does not exist, ask for 2-3 adjectives describing the brand voice before writing.
-5. **Check `.claude/skills/<brand>-brand/SKILL.md`** — if a project brand skill exists (e.g., `inesmaths-brand`), load it AND any sibling references it points to (e.g., `seo-process-additions.md`, `shopify-publish-rules.md`). These layer project-specific rules (product-CTA mapping, post-publish loop, anti-AI image rules, Shopify push mechanics) on top of universal SEO rules. Apply both.
-6. **Gather missing context** — only ask what the above files don't cover:
+2. **Load `references/human-voice-rules.md`** — anti-AI detection rules. Apply to all output. Human-sounding copy is an E-E-A-T signal. If unavailable, prioritize natural language and avoid AI-sounding vocabulary (no 'leverage', 'utilize', 'delve', 'comprehensive').
+3. **Load `references/seo-growth-copy-integration.md`** — connect SEO copy to GSC, GA4, Google Trends, DataForSEO/Ads, SERP, internal links, CTA mapping, and post-publish measurement when data exists.
+4. **Load `references/proof-provenance.md` when using metrics or claims** — preserve source, window, raw values, and attribution confidence.
+5. **Load `references/concision-pass.md` before final delivery** — cut without weakening persuasion.
+6. **Check `.agents/product-marketing-context.md`** — if it exists, use as the primary source for product, audience, and positioning. If it does not exist, gather product and audience info from the user.
+7. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to all output. If it does not exist, ask for 2-3 adjectives describing the brand voice before writing.
+8. **Check `.claude/skills/<brand>-brand/SKILL.md`** — if a project brand skill exists, load it and any sibling references it points to. These layer project-specific rules on top of universal SEO rules.
+9. **Gather missing context** — only ask what the above files don't cover:
    - **Target keyword(s):** Primary keyword and any secondary terms?
    - **Page type:** Blog post, product page, landing page, pillar page, FAQ, local page?
    - **Search intent:** Informational, commercial, transactional, or navigational?

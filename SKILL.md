@@ -25,17 +25,21 @@ For full pages or multi-section copy, follow the complete workflow below startin
 
 Before writing a single word, load context in this order:
 
-1. **Check `.agents/product-marketing-context.md`** — if it exists, use it as the primary source of truth for the product, audience, and positioning. Do not re-ask what's already there. If it does not exist, gather product/audience/positioning info from the user.
-2. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to every piece of output. No deviations (see Voice and Tone section below).
-3. **Load `references/human-voice-rules.md`** — apply all rules to every output. No exceptions. If it does not exist, apply the writing style rules in this skill as the baseline voice standard.
-4. **If the task involves email copy**, load `references/email-frameworks.md` for email-specific structures and checklists. If it does not exist, use the email structure guidance in this section.
+1. **Load `references/drayton-eddie-principles.md`** — apply the Drayton selling discipline and Eddie micro-lesson/story principles to every substantial draft.
+2. **Load `references/human-voice-rules.md`** — apply all rules to every output. No exceptions. If it does not exist, apply the writing style rules in this skill as the baseline voice standard.
+3. **Load `references/hook-discipline.md` when the opening matters** — if a draft feels generic, change the entry point before polishing.
+4. **Load `references/copy-critique-before-rewrite.md` when improving existing copy** — diagnose what works, what leaks, and what to preserve before rewriting.
+5. **Load `references/concision-pass.md` before final delivery** — cut words that do not earn their place.
+6. **Check `.agents/product-marketing-context.md`** — if it exists, use it as the primary source of truth for the product, audience, and positioning. Do not re-ask what's already there. If it does not exist, gather product/audience/positioning info from the user.
+7. **Check `.agents/tone-of-voice.md`** — if it exists, apply the voice guide to every piece of output. No deviations (see Voice and Tone section below).
+8. **If the task involves email copy**, load `references/email-frameworks.md` for email-specific structures and checklists. If it does not exist, use the email structure guidance in this section.
    For email tasks, `references/email-frameworks.md` provides complete structures (Shleyner newsletter format, Bird sales email format, subject line principles, 4x draft method). Follow those frameworks for email — they replace the Page Structure Framework below.
-5. **Gather missing context** — only ask what is not already covered by the above files:
+9. **Gather missing context** — only ask what is not already covered by the above files:
    - **Page purpose:** What type of page or piece is this? What is the ONE primary action?
    - **Audience:** Who are they? What problem? What objections? What language do they use?
    - **Product/offer:** What is it? What makes it different? What transformation? What proof?
    - **Traffic source:** Where are visitors coming from? What do they already know?
-6. **New vs. improve?** — If the user wants to improve existing copy (not write from scratch), ask them to share the current version. Analyze it first: what's working, what's broken, what to preserve. Do not rewrite from zero unless explicitly asked.
+10. **New vs. improve?** — If the user wants to improve existing copy (not write from scratch), ask them to share the current version. Analyze it first: what's working, what's broken, what to preserve. Do not rewrite from zero unless explicitly asked.
 
 Ask only what is missing. Do not run a full intake if context files already answer it.
 
@@ -316,4 +320,5 @@ Do not output a wall of copy. Section labels, annotations, and alternatives are 
 - **french-copywriting** — same framework, adapted for French-language copy and French audience conventions
 - **social-copywriting** — LinkedIn and X (Twitter) post copy: hooks, formats, platform-specific rules
 - **tone-of-voice** — define brand voice before writing copy, when no voice guide exists yet
+- **career-copywriting** — CVs, cover letters, LinkedIn profiles, portfolio summaries, application answers, and recruiter-facing positioning
 - **copy-editing** (external) — line-by-line editing of existing copy without structural rewrites
