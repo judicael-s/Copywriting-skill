@@ -269,7 +269,7 @@ Each reference exists because one recurring copy problem needed a reusable answe
 
 ## Credits
 
-Built by [Jules Sauvajol](https://github.com/judicael-s), bilingual FR/EN digital marketer focused on SEO, content strategy, and marketing automation.
+Built by [Jules Sauvajol](https://www.linkedin.com/in/jules-sauvajol/), bilingual FR/EN digital marketer focused on SEO, content strategy, and marketing automation.
 
 ## License
 
