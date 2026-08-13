@@ -56,6 +56,16 @@ This skill pushes the agent to do the harder work first:
 | `tone-of-voice` | Brand voice guide and channel adaptation | You need a reusable voice system |
 | `career-copywriting` | CVs, cover letters, LinkedIn profiles, recruiter-facing copy | You need personal positioning or applications |
 
+### Optional Hermes Tweet Context
+
+For Hermes Agent users, [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet)
+can supply read-only public X/Twitter context before `social-copywriting` drafts
+posts or threads. Use it for public tweet reads, replies, user lookup, trends,
+and keyword monitoring. Keep writing inside this copywriting skill.
+
+Hermes Tweet read tools use `XQUIK_API_KEY`. Leave its action gate disabled
+unless a separate Hermes workflow explicitly approves write actions.
+
 ## What makes it different
 
 ### It is principles-based
