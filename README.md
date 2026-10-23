@@ -1,6 +1,6 @@
 # Copywriting Skill
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/judicael-s/Copywriting-skill?style=social)](https://github.com/judicael-s/Copywriting-skill/stargazers)
 
 A free copywriting skill library for AI agents.
 
@@ -13,6 +13,25 @@ More believable.
 More useful to the reader.
 
 It works with Hermes, Open Claw Agent, Claude Code, Codex, Cursor, Windsurf, Cline, and any agent that can follow markdown workflows.
+
+## Table of contents
+
+- [What it does](#what-it-does)
+- [The idea](#the-idea)
+- [Skills](#skills)
+- [What makes it different](#what-makes-it-different)
+- [How the skills work together](#how-the-skills-work-together)
+- [File structure](#file-structure)
+- [Installation](#installation)
+- [Common workflows](#common-workflows)
+  - [Improve a landing page](#improve-a-landing-page)
+  - [Write an SEO page](#write-an-seo-page)
+  - [Write a LinkedIn micro-lesson](#write-a-linkedin-micro-lesson)
+  - [Write French copy](#write-french-copy)
+  - [Write a cover letter or CV bullets](#write-a-cover-letter-or-cv-bullets)
+- [References](#references)
+- [Credits](#credits)
+- [License](#license)
 
 ## What it does
 
@@ -266,6 +285,10 @@ Each reference exists because one recurring copy problem needed a reusable answe
 | `linkedin-formats.md` | LinkedIn formats and constraints |
 | `x-formats.md` | X post and thread formats |
 | `tone-dimensions.md` | brand voice design |
+
+---
+
+If this skill has been useful in your work, [please star the repository on GitHub](https://github.com/judicael-s/Copywriting-skill). It helps others find it and helps guide what I improve next.
 
 ## Credits
 
